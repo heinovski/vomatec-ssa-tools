@@ -16,3 +16,6 @@ def main():
     args = parser.parse_args()
 
     root = read(args.filename)
+
+if __name__ == "__main__":
+    main()

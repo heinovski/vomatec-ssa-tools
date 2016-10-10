@@ -10,7 +10,7 @@ def read(filename):
     return ET.parse(filename)
 
 def main():
-    parser = argsparse.ArgumentParser()
+    parser = argparse.ArgumentParser()
     parser.add_argument("filename")
 
     args = parser.parse_args()

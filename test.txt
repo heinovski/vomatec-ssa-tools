@@ -1,0 +1,4 @@
+Stoff	|UN	|CAS	|Molmasse	|Grenzwert	|Geruchsschwelle	|Hinweis
+Amine	|-	|-	|-	|-	|-	|-
+Ammoniak, Diethylamine 	|-	|-	|-	|-	|-	|-
+Kohlenwasserstoffe (höhere Klassen)	|-	|-	|-	|-	|-	|-

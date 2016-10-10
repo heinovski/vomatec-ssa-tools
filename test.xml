@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SSA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Stoffe UNNr="42">
+		<Stoffbezeichnung>Amine</Stoffbezeichnung>
+		<UNNr>-</UNNr>
+		<CASNr>-</CASNr>
+		<Molmasse>-</Molmasse>
+		<Grenzwert>Kein geeigneter 4h-Grenzwert vorhanden!</Grenzwert>
+		<Geruchsschwelle>-</Geruchsschwelle>
+	</Stoffe>
+	<Stoffe>
+		<Stoffbezeichnung>Ammoniak, Diethylamine </Stoffbezeichnung>
+		<UNNr>-</UNNr>
+		<CASNr>-</CASNr>
+		<Molmasse>-</Molmasse>
+		<Grenzwert>Kein geeigneter 4h-Grenzwert vorhanden!</Grenzwert>
+		<Geruchsschwelle>-</Geruchsschwelle>
+	</Stoffe>
+	<Stoffe>
+		<Stoffbezeichnung>Kohlenwasserstoffe (höhere Klassen)</Stoffbezeichnung>
+		<UNNr>-</UNNr>
+		<CASNr>-</CASNr>
+		<Molmasse>-</Molmasse>
+		<Grenzwert>Kein geeigneter 4h-Grenzwert vorhanden!</Grenzwert>
+		<Geruchsschwelle>-</Geruchsschwelle>
+	</Stoffe>
+</SSA>

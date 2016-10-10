@@ -21,7 +21,9 @@ import argparse
 import xml.etree.ElementTree as ET
 
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description="Copyright (C) 2016 Julian Heinovski <mail@julian-heinovski.de>. \
+This program comes with ABSOLUTELY NO WARRANTY. \
+This is free software, and you are welcome to redistribute it under certain conditions; see LICENSE for details.")
 parser.add_argument("source", help="the source xml file name")
 parser.add_argument("--destination", help="the destination file name")
 parser.add_argument("--version", action="version", version="%(prog)s version 0.1")

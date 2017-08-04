@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # This script takes an element database in xml formatand and creates a corresponding txt file for SSA.
-# Copyright (C) 2016 Julian Heinovski <mail@julian-heinovski.de>
+# Copyright (C) 2017 Julian Heinovski <mail@julian-heinovski.de>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ import argparse
 import xml.etree.ElementTree as ET
 
 
-parser = argparse.ArgumentParser(description="Copyright (C) 2016 Julian Heinovski <mail@julian-heinovski.de>. \
+parser = argparse.ArgumentParser(description="Copyright (C) 2017 Julian Heinovski <mail@julian-heinovski.de>. \
 This program comes with ABSOLUTELY NO WARRANTY. \
 This is free software, and you are welcome to redistribute it under certain conditions; see LICENSE for details.")
 parser.add_argument("source", help="the source xml file name")

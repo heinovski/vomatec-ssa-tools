@@ -40,7 +40,10 @@ with open(destination_filename, "w") as f:
     f.write("Stoff\t|UN\t|CAS\t|Molmasse\t|Grenzwert\t|Geruchsschwelle\t|Hinweis")
 
     for element in root:
-        name = str(element[0].text)
+        try:
+            name = str(element[0].text)
+        except ValueError:
+            name = r"-"
         try:
             un = int(element[1].text)
         except ValueError:
@@ -57,11 +60,17 @@ with open(destination_filename, "w") as f:
             limit = float(element[4].text.replace(" ppm", ""))
         except ValueError:
             limit = r"-"
-        try:
-            threshold = float(element[5].text)
-        except ValueError:
-            threshold = r"-"
-        comment = r"-" #TODO
+        if len(element) == 6:
+            try:
+                threshold = float(element[5].text)
+            except ValueError:
+                threshold = r"-"
+        comment = r"-"
+        if len(element) == 7:
+            try:
+                comment = str(element[6].text)
+            except ValueError:
+                comment = r"-"
 
         f.write("\n{}\t|{}\t|{}\t|{}\t|{}\t|{}\t|{}".format(name, un, cas, mol, limit, threshold, comment))
         print("Wrote " + name)

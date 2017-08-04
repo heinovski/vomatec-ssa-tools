@@ -26,7 +26,7 @@ This program comes with ABSOLUTELY NO WARRANTY. \
 This is free software, and you are welcome to redistribute it under certain conditions; see LICENSE for details.")
 parser.add_argument("source", help="the source xml file name")
 parser.add_argument("--destination", help="the destination file name")
-parser.add_argument("--version", action="version", version="%(prog)s version 0.1")
+parser.add_argument("--version", action="version", version="%(prog)s version 0.2")
 
 args = parser.parse_args()
 

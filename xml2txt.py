@@ -43,34 +43,34 @@ with open(destination_filename, "w") as f:
         try:
             name = str(element[0].text)
         except ValueError:
-            name = r"-"
+            name = r"NaN"
         try:
             un = int(element[1].text)
         except ValueError:
-            un = r"-"
+            un = r"-1"
         try:
             cas = str(element[2].text)
         except ValueError:
-            cas = r"-"
+            cas = r"NaN"
         try:
             mol = float(element[3].text)
         except ValueError:
-            mol = r"-"
+            mol = r"-1"
         try:
             limit = float(element[4].text.replace(" ppm", ""))
         except ValueError:
-            limit = r"-"
+            limit = r"-1"
         if len(element) == 6:
             try:
                 threshold = float(element[5].text)
             except ValueError:
-                threshold = r"-"
-        comment = r"-"
+                threshold = r"-1"
+        comment = r""
         if len(element) == 7:
             try:
                 comment = str(element[6].text)
             except ValueError:
-                comment = r"-"
+                comment = r""
 
         f.write("\n{}\t|{}\t|{}\t|{}\t|{}\t|{}\t|{}".format(name, un, cas, mol, limit, threshold, comment))
         print("Wrote " + name)

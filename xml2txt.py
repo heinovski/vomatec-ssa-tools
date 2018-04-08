@@ -37,7 +37,7 @@ destination_filename = args.destination if args.destination else args.source[0:l
 
 with open(destination_filename, "w") as f:
 
-    f.write("Stoff\t|UN\t|CAS\t|Molmasse\t|Grenzwert\t|Geruchsschwelle\t|Hinweis")
+    f.write("Stoff\t|UN\t|CAS\t|Molmasse\t|Grenzwert\t|Geruchsschwelle\t|Hinweis\n")
 
     for element in root:
         try:
@@ -72,5 +72,5 @@ with open(destination_filename, "w") as f:
             except ValueError:
                 comment = r""
 
-        f.write("\n{}\t|{}\t|{}\t|{}\t|{}\t|{}\t|{}".format(name, un, cas, mol, limit, threshold, comment))
+        f.write("{}\t|{}\t|{}\t|{}\t|{}\t|{}\t|{}\n".format(name, un, cas, mol, limit, threshold, comment))
         print("Wrote " + name)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# This script takes an element database in xml formatand and creates a corresponding txt file for SSA.
 # Copyright (C) 2017 Julian Heinovski <mail@julian-heinovski.de>
+# This script takes an element database in xml formatand and creates a corresponding txt file for SSA.
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
